@@ -1,4 +1,4 @@
-是一套基于用户页面的JavaScript库
+是一套基于用户页面的JavaScript库，单项数据流
 
 ### jsx语法
 
