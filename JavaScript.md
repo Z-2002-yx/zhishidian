@@ -40,3 +40,29 @@ onwheel   监听到的元素对象中存在deltaY 表示整数时为向下滚动
 - scrollTop  定位当前元素的顶部位置
 - scrollLeft 定位当前元素的左侧位置
 
+
+
+### 修改Css属性的两种方式
+
+##### 内联样式
+
+```javascript
+const el = document.createElement('div')
+
+el.style.backgroundColor = 'red' // 直接设置内联样式--推荐
+// 或者 
+el.style.cssText = 'background-color: red' // 会覆盖之前的css
+// 或者
+el.setAttribute('style', 'background-color: red') // 添加自定义的style属性
+```
+
+
+
+##### 添加类名
+
+```javascript
+el.className = "class-one class-two";
+
+el.setAttribute("class", "class-one class-two");// 添加自定义属性，和classname相同
+```
+
